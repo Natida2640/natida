@@ -3,53 +3,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <!--logo-->
-    <ImageView
-        android:layout_marginTop="70dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_margin="30dp"
+        android:background="#82ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <!--add name-->
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:text="SBC Money Change"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <!--logo-->
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <!--data-->
-    <TextView
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="12-1-2018"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <!--add name-->
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="SBC Money Change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <!--Rate title-->
-    <TextView
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:text="Rate USD/THB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <!--Rate Value-->
-    <TextView
-        android:textColor="#e53935"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textSize="48sp"
-        android:text="33.12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <!--data-->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="12-1-2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <!--Button calculate-->
+        <!--Rate title-->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="Rate USD/THB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--Rate Value-->
+        <TextView
+            android:textColor="#e53935"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:text="33.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--Button calculate-->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
 </LinearLayout>

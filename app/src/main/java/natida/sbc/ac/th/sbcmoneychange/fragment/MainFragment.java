@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import natida.sbc.ac.th.sbcmoneychange.R;
 
@@ -14,6 +15,29 @@ import natida.sbc.ac.th.sbcmoneychange.R;
  */
 
 public class MainFragment extends Fragment{
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+//        Calculate Controller
+        Button button = getView().findViewById(R.id.btnCalculate);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Replace Fragment
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment, new CalcutateFragement())
+                        .addToBackStack(null)
+                        .commit();
+
+            }
+        });
+
+
+    }   //Main Method
 
     @Nullable
     @Override
